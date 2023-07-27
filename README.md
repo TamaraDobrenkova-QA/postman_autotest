@@ -1,1 +1,1 @@
-# postman_autotest
+# a simple autotest in postman
