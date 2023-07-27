@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "34584634-b2aa-4414-8836-4118128c5d55",
+		"name": "StarWars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27797605"
+	},
+	"item": [
+		{
+			"name": "People",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Ожидаю статус ответа 200\"), function() {\r",
+							"    // make a request\r",
+							"    // if your response is 200\r",
+							"    pm.response.to.have.status(200);\r",
+							"    }\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\"), function () {\r",
+							"    // make a request\r",
+							"    // if response time is below 200\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"    }   \r",
+							"\r",
+							"pm.test(\"Status code name has string\"), function () {\r",
+							"    // make a request\r",
+							"    // if status code name has string\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"    }\r",
+							"\r",
+							"pm.test(\"В ответе есть имя\"), function () {\r",
+							"    // make a request\r",
+							"    // if response has \"name\"\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"}\r",
+							"\r",
+							"pm.test (\"Пол - мужской\"), function () {\r",
+							"    // make a request\r",
+							"    // if \"gender\" is \"male\"\r",
+							"    pm.response.to.have.status (\"OK\");\r",
+							"}\r",
+							"  "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{host}}/api/{{p}}/10/",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"{{p}}",
+						"10",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Planet",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Ожидаю статус ответа 200\"), function() {\r",
+							"    // make a request\r",
+							"    // if your response is 200\r",
+							"    pm.response.to.have.status(200);\r",
+							"    }\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\"), function () {\r",
+							"    // make a request\r",
+							"    // if response time is below 200\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"    }   \r",
+							"\r",
+							"pm.test(\"Status code name has string\"), function () {\r",
+							"    // make a request\r",
+							"    // if status code name has string\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"    }\r",
+							"\r",
+							"pm.test(\"В ответе есть имя\"), function () {\r",
+							"    // make a request\r",
+							"    // if response has \"name\"\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"}\r",
+							"\r",
+							"pm.test (\"климат\"), function () {\r",
+							"    // make a request\r",
+							"    //if response \"climate\" is \"temperate\"\r",
+							"    pm.response.to.hace.status(\"OK\");\r",
+							"}\r",
+							"  "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{host}}/api/planets/7/",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"planets",
+						"7",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Space ship",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Ожидаю статус ответа 200\"), function() {\r",
+							"    // make a request\r",
+							"    // if your response is 200\r",
+							"    pm.response.to.have.status(200);\r",
+							"    }\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\"), function () {\r",
+							"    // make a request\r",
+							"    // if response time is below 200\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"    }   \r",
+							"\r",
+							"pm.test(\"Status code name has string\"), function () {\r",
+							"    // make a request\r",
+							"    // if status code name has string\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"    }\r",
+							"\r",
+							"pm.test(\"В ответе есть имя\"), function () {\r",
+							"    // make a request\r",
+							"    // if response has \"name\"\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"}\r",
+							"\r",
+							"pm.test(\"Пассажиры\"), function () {\r",
+							"    // make a request\r",
+							"    //if response \"passangers\" is \"75\"\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"}\r",
+							"  "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{host}}/api/starships/5/",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"starships",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "{{host}}",
+			"value": "swapi.dev",
+			"type": "string",
+			"disabled": true
+		},
+		{
+			"key": "host",
+			"value": "swapi.dev"
+		},
+		{
+			"key": "p",
+			"value": "people",
+			"type": "string"
+		}
+	]
+}
